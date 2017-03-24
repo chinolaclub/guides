@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Chinola Club - Hosting with Github</title>
+        <link rel="stylesheet" href="./css/reveal.css">
+        <link rel="stylesheet" href="./css/theme/night.css" id="theme">
+        <link rel="stylesheet" href="./css/highlight/zenburn.css">
+        <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
+
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section  data-markdown><script type="text/template">
+
+# Hosting with Github
+
+<aside class="notes"><p>Have students go to github.com</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## What is Github?
+
+<aside class="notes"><p>Have students take a guess based on what is listed</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Place to share and learn
+
+Browse, copy, learn from hackers, coders, developers, designers across the
+world.
+
+<aside class="notes"><p>Having a github profile is a very good thing. Shows you are well on your
+way. As you continue in HSA tech classes you can learn more about Git/Github</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Create your Github account
+</script></section><section  data-markdown><script type="text/template">
+<img src="images/signup-homepage.png" />
+
+</script></section><section  data-markdown><script type="text/template">
+### Pick another username if taken
+
+<img src="images/signup-01-username-taken.png" />
+</script></section><section  data-markdown><script type="text/template">
+### Select `free` account
+
+<img src="images/sign-up-02.png" />
+</script></section><section  data-markdown><script type="text/template">
+### Setup account types
+
+<img src="images/signup-03.png" />
+
+</script></section><section  data-markdown><script type="text/template">
+### Verify your email
+
+<img src="images/verify-email.png" />
+
+</script></section><section  data-markdown><script type="text/template">
+### Verification email
+
+<img src="images/verification-email.png" />
+</script></section><section  data-markdown><script type="text/template">
+### Success! You're in.
+
+Now let's setup your profile.
+
+<img src="images/your-dashboard.png" />
+</script></section><section  data-markdown><script type="text/template">
+### Edit your profile
+
+<img src="images/profile-bare.png" />
+</script></section><section  data-markdown><script type="text/template">
+### Add a photo
+
+<img src="images/profile-01-photo.png" />
+</script></section><section  data-markdown><script type="text/template">
+### Fill in your details
+
+<img src="images/profile-02-setup.png" />
+</script></section><section  data-markdown><script type="text/template">
+### Huzzah, checkout your profile page
+
+<img src="images/profile-success.png" />
+</script></section><section  data-markdown><script type="text/template">
+## Adding a repo
+</script></section><section  data-markdown><script type="text/template">
+### What is a repo?
+
+A collection of code for a project. You can have as many public repos as you want.
+</script></section><section  data-markdown><script type="text/template">
+### Fill in repo details
+
+<img src="images/add-repo.png" />
+</script></section><section  data-markdown><script type="text/template">
+### Configure your repo <br />to host your project
+</script></section><section  data-markdown><script type="text/template">
+### Your repo settings
+
+<img src="images/pages-01-setup.png" />
+</script></section><section  data-markdown><script type="text/template">
+### Enable pages for hosting
+
+<img src="images/pages-02-setup.png" />
+</script></section><section  data-markdown><script type="text/template">
+### Check it out!
+
+<img src="images/pages-success.png" />
+
+</script></section><section  data-markdown><script type="text/template">
+## Add another account
+
+```
+<usernamex>.github.com
+```
+</script></section></div>
+        </div>
+
+        <script src="./lib/js/head.min.js"></script>
+        <script src="./js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: './plugin/zoom-js/zoom.js', async: true },
+              { src: './plugin/notes/notes.js', async: true },
+              { src: './plugin/math/math.js', async: true }
+            ];
+
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default', // none/fade/slide/convex/concave/zoom
+              dependencies: deps
+            };
+
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+
+            var options = {"transition":"slide"};
+            options = extend(defaultOptions, options, queryOptions);
+            Reveal.initialize(options);
+        </script>
+
+    </body>
+</html>
